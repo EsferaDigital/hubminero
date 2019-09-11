@@ -1,0 +1,182 @@
+// Refactorizar
+
+.Header-container{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  width: var(--main-maximo);
+  // border: 3px solid red;
+  @include mq(lgs){
+    display: flex;
+  }
+}
+
+.Logo{
+  position: absolute;
+  height: $altura-header;
+  line-height: $altura-header;
+  z-index: capa(capa1);
+  // border: 1px solid blue;
+  @include mq(mdl){
+    position: static;
+    width: 30%;
+  }
+  & a{
+    display: grid;
+    width: auto;
+    height: $altura-header;
+    align-content: center;
+  }
+  & img{
+    width: auto;
+    height: $altura-header;
+  }
+}
+
+.hamburger{
+  &:hover{
+    opacity: 1;
+  }
+  &:focus{
+    outline: 0;
+    border: 0;
+  }
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+  background-color: black;
+  // position: fixed;
+  // right: .5rem;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after{
+  background-color: black;
+}
+
+
+
+.Panel{
+  position: fixed;
+  z-index: capa(capa9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: calc(100% + 10rem);
+  overflow-y: auto;
+  transition: transform .5s ease;
+  // De arriba
+  // transform: translate(0, -100%);
+  // // De la izquierda
+  // transform: translate(-100%, 0);
+  // // De abajo
+  // transform: translate(0, 100%);
+  // De la derecha
+  transform: translate(100%, 0);
+  // border: 3px solid green;
+  @include mq(lgs){
+    position: static;
+    width: 70%;
+    display: flex;
+    overflow-y: visible;
+    background-color: transparent;
+    transform: translate(0,0);
+  }
+  &.is-active{
+    transform: translate(0,0);
+  }
+  &-btn{
+    position: absolute;
+    z-index: capa(capa10);
+    top: -.5rem;
+    right: 0;
+    padding-right: 0;
+    @include mq(lgs){
+      display: none;
+    }
+  }
+  &-btn.is-active{
+    position: fixed;
+    right: 1rem;
+  }
+}
+
+.Menu{
+  display: flex;
+  margin: 0 auto;
+  padding-top: $altura-header;
+  text-align: center;
+  height: 100%;
+  background: color(secondary);
+  @include mq(lgs){
+    width: 100%;
+    padding-top: 0;
+    height: $altura-header;
+    margin: 0;
+    // border: 3px solid red;
+    background: transparent;
+    justify-content: flex-end;
+  }
+  & ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    @include mq(lgs){
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    & li{
+      margin-left: 0;
+      line-height: 3.5rem;
+      @include mq(sm){
+        line-height: 4rem;
+      }
+      @include mq(lgs){
+        margin-left: .5rem;
+        // margin: auto;
+        line-height: 3rem;
+        // background-color: purple;
+      }
+      & a{
+        display: block;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        transition: all .3s ease;
+        position: relative;
+        --menu-activo: transparent;
+        &::before{
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 3px;
+          background-color: var(--menu-activo);
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+        &:hover{
+          --menu-activo: hsl(44, 100%, 48%);
+        }
+        @include mq(lgs){
+          padding: 0 .5rem;
+          font-size: 1rem;
+        }
+        @include mq(lgm){
+          font-size: 1.3rem;
+        }
+        @include mq(lg){
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

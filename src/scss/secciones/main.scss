@@ -1,0 +1,9 @@
+.Main{
+  // border: 1px solid green;
+  position: relative;
+  top: $altura-header;
+}
+
+#beneficios, #socios{
+  background-image: img("tierra.jpg");
+}

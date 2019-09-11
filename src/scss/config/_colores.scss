@@ -1,0 +1,22 @@
+ //Para obtener color
+
+ @function color($color) {
+  @return map-get($colors,$color);
+}
+
+// Paleta de colores
+
+$colors:(
+  primary: hsl(160, 100%, 21%),
+  secondary: hsl(44, 100%, 48%),
+  tertiary: hsl(183, 100%, 33%),
+  alert: hsl(358, 81%, 37%)
+);
+
+$fondo-transparente: rgba(9, 10, 7, 0.8);
+
+ // Con esta función, para capturar el color bastaria poner, por ejemplo:
+ //
+ // div{
+ //   background: color(gris-claro);
+ // }

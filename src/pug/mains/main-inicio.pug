@@ -1,0 +1,134 @@
+main.Main
+  section.Slider
+    .Slider-item.slider-actual
+        img(src="img/camion-minero.jpg", alt="Camion Minero")
+    .Slider-item
+      img(src="img/mina-abierta.jpg", alt="Mina Abierta")
+    .Slider-item
+      img(src="img/maquina-minera.jpg", alt="Maquina Minera")
+    .Slider-item
+      img(src="img/mineros.jpg", alt="Mineros")
+    .Slider-item
+      img(src="img/mineria-subterranea.jpg", alt="Mineria Subterranea")
+    .Slider-item
+      img(src="img/retro.jpg", alt="Retroexcabadora")
+    .anterior#Prev
+      i(class="fas fa-chevron-left")
+    .siguiente#Next
+      i(class="fas fa-chevron-right")
+    .puntos
+      span#punto1.punto.punto-activo
+      span#punto2.punto
+      span#punto3.punto
+      span#punto4.punto
+      span#punto5.punto
+      span#punto6.punto
+    .PlayPause
+      i(class="fas fa-pause")#btnPlay
+  section#propuesta.Container-grid-2
+    .Card-text
+      .Container-grid-fix-2
+        .Box-img
+          img(src="img/logo.png" alt="logo")
+        .Box-text
+          h2 Propuesta
+          h3 de valor
+      .Box-text
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolorem at vel laboriosam culpa reprehenderit incidunt molestias nobis commodi, voluptates tempora quia aperiam exercitationem recusandae earum sequi officia explicabo fugiat!
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ab incidunt recusandae, voluptatum nulla ratione exercitationem nisi illum. Architecto, accusantium tempora sunt ipsum consequuntur accusamus aliquid voluptatum beatae iste nulla!
+        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis dolorem officiis quo perferendis, porro beatae assumenda impedit, dolor nesciunt dignissimos expedita nihil aliquid voluptates. Repellat doloremque rerum recusandae itaque! Ex?
+    .Box-img
+      img(src="img/propuesta.jpg" alt="Propuesta")
+  section#beneficios
+    .Container-grid-fix-2
+        .Box-img
+          img(src="img/logo.png" alt="logo")
+        .Box-text
+          h2 Beneficios
+    .Container-grid-4
+      .Container-grid-4-item
+        .Box-img
+          img(src="img/icon-minero.svg")
+        .Card-text
+          h3 Empresas
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+      .Container-grid-4-item
+        .Box-img
+          img(src="img/icon-camion.png")
+        .Card-text
+          h3 Proveedores
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+      .Container-grid-4-item
+        .Box-img
+          img(src="img/icon-up.png")
+        .Card-text
+          h3 Startup
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+      .Container-grid-4-item
+        .Box-img
+          img(src="img/icon-brain.png")
+        .Card-text
+          h3 Centros de conocimiento
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+  section#plan.Container-grid-2
+    .Card-text
+      .Container-grid-fix-2
+        .Box-img
+          img(src="img/logo.png" alt="logo")
+        .Box-text
+          h2 Propuesta
+          h3 de valor
+      .Box-text
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolorem at vel laboriosam culpa reprehenderit incidunt molestias nobis commodi, voluptates tempora quia aperiam exercitationem recusandae earum sequi officia explicabo fugiat!
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ab incidunt recusandae, voluptatum nulla ratione exercitationem nisi illum. Architecto, accusantium tempora sunt ipsum consequuntur accusamus aliquid voluptatum beatae iste nulla!
+        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis dolorem officiis quo perferendis, porro beatae assumenda impedit, dolor nesciunt dignissimos expedita nihil aliquid voluptates. Repellat doloremque rerum recusandae itaque! Ex?
+    .Box-img
+      img(src="img/plan.jpg" alt="Plan de acción")
+  section#socios
+    .Container-grid-fix-2
+        .Box-img
+          img(src="img/logo.png" alt="logo")
+        .Box-text
+          h2 Socios
+    .Slider-flow
+      .Slider-flow-item.slider-flow-actual
+        img(src="img/Antamina.jpg", alt="Antamina")
+      .Slider-flow-item
+        img(src="img/buenaventura.jpg", alt="Buenaventura")
+      .Slider-flow-item
+        img(src="img/gold-fields.jpg", alt="Gold Fields")
+      .Slider-flow-item
+        img(src="img/nexa.jpg", alt="Nexa")
+  section#contactanos
+    .Container-grid-fix-2
+        .Box-img
+          img(src="img/logo.png" alt="logo")
+        .Box-text
+          h2 Socios
+    form(method="post" action="" class="ContactForm" name="formulario")
+      .ContactForm-item
+        i.fas.fa-user
+        input(type="text" name="name" id="Name" placeholder="Nombre Apellido" required)
+      .ContactForm-item
+        i.fas.fa-users
+        select(id="select-1" name="select-1")
+          option(value="Empresa Minera" selected="selected") Empresa Minera
+          option(value="Proveedor Minería") Proveedor Minería
+          option(value="Startup") Startup
+          option(value="Centro de Conocimiento") Centro de Conocimiento
+          option(value="Otro") Otro
+      .ContactForm-item
+        i
+        input(type="text" name="company" placeholder="Nombre Organización")
+      .ContactForm-item
+        i.far.fa-envelope
+        input(type="email" name="email" id="Email" placeholder="E-mail" required)
+      .ContactForm-item
+        i.fas.fa-phone
+        input(type="tel" name="phone" placeholder="Teléfono")
+      .ContactForm-item
+        i.far.fa-clipboard
+        textarea(name="message" id="Message" placeholder="Comentario" cols="30" rows="10" required)
+      .ContactForm-item
+        input(type="hidden" name="action" value="process_form")
+        input(type="submit" name="submit" id="enviar" class="btn-enviar" value="Enviar")
