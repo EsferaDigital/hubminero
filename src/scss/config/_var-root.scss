@@ -20,7 +20,7 @@ $altura-header: 10rem; //revisar
   --columns-container-grid3: 1fr;
   --columns-container-grid4: 1fr;
   --columns-box-icon: 1fr;
-  --columns-container-fix-2: repeat(2, 1fr);
+  --columns-container-fix-2: repeat(2, minmax(min-content, max-content));
   //card-copy
   --columns-card-copy: 1fr;
   --rows-card-copy: 1fr 1fr;

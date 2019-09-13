@@ -9,7 +9,7 @@
 }
 
 .Icon-link{
-  @include icon(color(rojo), transparent);
+  @include icon(color(secondary), transparent);
   padding: var(--padding-icon);
   transition: color .3s ease;
 }

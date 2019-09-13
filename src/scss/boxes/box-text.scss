@@ -4,6 +4,10 @@
   @include Box;
   padding: 1rem;
   margin: auto;
+  justify-items: start;
   width: var(--main-maximo);
   max-width: $ancho-maximo;
+  & h2, h3{
+    text-transform: uppercase;
+  }
 }

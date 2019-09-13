@@ -25,86 +25,97 @@ main.Main
       span#punto6.punto
     .PlayPause
       i(class="fas fa-pause")#btnPlay
-  section#propuesta.Container-grid-2
-    .Card-text
-      .Container-grid-fix-2
-        .Box-img
+  section#propuesta.Propuesta
+    .Propuesta-item
+      .Propuesta-card-header
+        .Propuesta-card-header-img
           img(src="img/logo.png" alt="logo")
-        .Box-text
+        .Propuesta-card-header-text
           h2 Propuesta
           h3 de valor
-      .Box-text
+      .Propuesta-card-body
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolorem at vel laboriosam culpa reprehenderit incidunt molestias nobis commodi, voluptates tempora quia aperiam exercitationem recusandae earum sequi officia explicabo fugiat!
         p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ab incidunt recusandae, voluptatum nulla ratione exercitationem nisi illum. Architecto, accusantium tempora sunt ipsum consequuntur accusamus aliquid voluptatum beatae iste nulla!
         p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis dolorem officiis quo perferendis, porro beatae assumenda impedit, dolor nesciunt dignissimos expedita nihil aliquid voluptates. Repellat doloremque rerum recusandae itaque! Ex?
-    .Box-img
-      img(src="img/propuesta.jpg" alt="Propuesta")
-  section#beneficios
-    .Container-grid-fix-2
-        .Box-img
+    .Propuesta-item
+      .Propuesta-item-img
+        img(src="img/propuesta.jpg" alt="Propuesta")
+  section#beneficios.Beneficios
+    .Beneficios-item
+      .Beneficios-card-header
+        .Beneficios-card-header-img
           img(src="img/logo.png" alt="logo")
-        .Box-text
+        .Beneficios-card-header-text
           h2 Beneficios
-    .Container-grid-4
-      .Container-grid-4-item
-        .Box-img
-          img(src="img/icon-minero.svg")
-        .Card-text
-          h3 Empresas
-          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
-      .Container-grid-4-item
-        .Box-img
-          img(src="img/icon-camion.png")
-        .Card-text
-          h3 Proveedores
-          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
-      .Container-grid-4-item
-        .Box-img
-          img(src="img/icon-up.png")
-        .Card-text
-          h3 Startup
-          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
-      .Container-grid-4-item
-        .Box-img
-          img(src="img/icon-brain.png")
-        .Card-text
-          h3 Centros de conocimiento
-          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
-  section#plan.Container-grid-2
-    .Card-text
-      .Container-grid-fix-2
-        .Box-img
+    .Beneficios-item
+      .Beneficios-item-img
+        img(src="img/icon-minero.svg")
+      .Beneficios-item-img
+        img(src="img/icon-camion.png")
+      .Beneficios-item-img
+        img(src="img/icon-up.png")
+      .Beneficios-item-img
+        img(src="img/icon-brain.png")
+    .Beneficios-item
+      .Cards
+        .Card
+          .Card-header
+            h3 Empresas
+          .Card-body
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+        .Card
+          .Card-header
+            h3 Proveedores
+          .Card-body
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+        .Card
+          .Card-header
+            h3 Startup
+          .Card-body
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+        .Card
+          .Card-header
+            h3 Centros de conocimiento
+          .Card-body
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+  section#plan.Plan
+    .Plan-item
+      .Plan-card-header
+        .Plan-card-header-img
           img(src="img/logo.png" alt="logo")
-        .Box-text
-          h2 Propuesta
-          h3 de valor
-      .Box-text
+        .Plan-card-header-text
+          h2 Plan de
+          h3 acción
+      .Plan-card-body
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolorem at vel laboriosam culpa reprehenderit incidunt molestias nobis commodi, voluptates tempora quia aperiam exercitationem recusandae earum sequi officia explicabo fugiat!
         p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ab incidunt recusandae, voluptatum nulla ratione exercitationem nisi illum. Architecto, accusantium tempora sunt ipsum consequuntur accusamus aliquid voluptatum beatae iste nulla!
         p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis dolorem officiis quo perferendis, porro beatae assumenda impedit, dolor nesciunt dignissimos expedita nihil aliquid voluptates. Repellat doloremque rerum recusandae itaque! Ex?
-    .Box-img
-      img(src="img/plan.jpg" alt="Plan de acción")
-  section#socios
-    .Container-grid-fix-2
-        .Box-img
+    .Plan-item
+      .Plan-item-img
+        img(src="img/plan.jpg" alt="Plan de acción")
+  section#socios.Socios
+    .Socios-item
+      .Socios-card-header
+        .Socios-card-header-img
           img(src="img/logo.png" alt="logo")
-        .Box-text
+        .Socios-card-header-text
           h2 Socios
-    .Slider-flow
-      .Slider-flow-item.slider-flow-actual
-        img(src="img/Antamina.jpg", alt="Antamina")
-      .Slider-flow-item
-        img(src="img/buenaventura.jpg", alt="Buenaventura")
-      .Slider-flow-item
-        img(src="img/gold-fields.jpg", alt="Gold Fields")
-      .Slider-flow-item
-        img(src="img/nexa.jpg", alt="Nexa")
+    .Socios-item
+      .Slider-flow
+        .Slider-flow-item.slider-flow-actual
+          img(src="img/Antamina.jpg", alt="Antamina")
+        .Slider-flow-item
+          img(src="img/buenaventura.jpg", alt="Buenaventura")
+        .Slider-flow-item
+          img(src="img/gold-fields.jpg", alt="Gold Fields")
+        .Slider-flow-item
+          img(src="img/nexa.jpg", alt="Nexa")
   section#contactanos
     .Container-grid-fix-2
         .Box-img
           img(src="img/logo.png" alt="logo")
         .Box-text
-          h2 Socios
+          h2 Contáctanos
     form(method="post" action="" class="ContactForm" name="formulario")
       .ContactForm-item
         i.fas.fa-user

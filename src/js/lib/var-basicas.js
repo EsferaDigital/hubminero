@@ -21,7 +21,7 @@ function smoothScroll(e){
   const targetId = e.currentTarget.getAttribute("href")
   const targetPosition = document.querySelector(targetId).offsetTop
   const startPosition = window.pageYOffset
-  const distance = targetPosition - startPosition //- 80
+  const distance = targetPosition - startPosition + 160
   const duration = 1000
   let start = null
 

@@ -19,8 +19,25 @@
   border: 2px solid red;
 }
 
-.Container-grid-fix-2{
-  @include container-grid(var(--columns-container-fix-2), auto, var(--gap-container-grid));
-  border: 2px solid blue;
+.Container-flex-2{
+  display: flex;
+  & .Box-img{
+    width: 40%;
+  }
 }
+
+// .Container-grid-fix-2{
+//   @include container-grid(var(--columns-container-fix-2), auto, var(--gap-container-grid));
+//   border: 2px solid blue;
+//   background-color: orange;
+//   max-width: 650px;
+//   justify-items: start;
+//   align-items: center;
+//   // & .Box-img{
+//   //   width: 60%;
+//   // }
+//   & .Box-text{
+//     border: 1px solid red;
+//   }
+// }
 
