@@ -41,7 +41,10 @@
   outline: none;
   border: none;
   &:hover{
-    background-color: rgba(9, 10, 7, 0.6);
+    background-color: color(secondary);
+  }
+  &:active{
+    transform: scale(.95);
   }
   & i{
     font-size: 1rem;

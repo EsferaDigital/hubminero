@@ -12,7 +12,7 @@
 // Textos
 
 // @import "textos/parrafos";
-// @import "textos/otros-textos";
+@import "textos/otros-textos";
 // @import "textos/titulos";
 
 // secciones (etiquetas html principales)
@@ -33,7 +33,7 @@
 
 // Elementos
 
-// @import "elementos/botones";
+@import "elementos/botones";
 // @import "elementos/iconos";
 @import "elementos/slider";
 
@@ -41,12 +41,12 @@
 // Boxes (contenido único centrado absoluto)
 
 // @import "boxes/box-img";
-// @import "boxes/box-text";
+@import "boxes/box-text";
 // // @import "boxes/box-audio";
 // // @import "boxes/box-video";
 // @import "boxes/box-form";
 // // @import "boxes/box-slider";
-// @import "boxes/box-creditos";
+@import "boxes/box-creditos";
 // // @import "boxes/box-maps";
 // @import "boxes/box-btn";
 
@@ -54,8 +54,8 @@
 // Cards (tarjetas con contenido unico. Van siempre dentro de un container grid)
 
 // @import "cards/card-img";
-// @import "cards/card-text";
-// @import "cards/card-copy";
+@import "cards/card-text";
+@import "cards/card-copy";
 
 
 

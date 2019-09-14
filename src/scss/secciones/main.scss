@@ -78,6 +78,8 @@
 #beneficios, #socios{
   background-image: img("tierra.jpg");
   max-width: 100%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
 }
 
 .Propuesta, .Plan{
@@ -87,17 +89,71 @@
 .Beneficios{
   @include seccion-blanca(white);
   grid-template-columns: 1fr;
+  // border: 1px solid red;
+  width: 100%;
   &-item:nth-child(2){
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    // border: 3px solid blue;
+    padding: 0;
+    width: 100%;
   }
-  &-item .Cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+  // &-item-img{
+  //   border: 3px solid green;
+  //   height: auto;
+  //   width: 50%;
+  //   margin: auto;
+  // }
   &-card-header{
     grid-template-columns: 10% 1fr;
   }
+}
+
+.Cards{
+  // border: 2px solid green;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.Card{
+  // border: 3px solid purple;
+  overflow: hidden;
+  &-img{
+    // border: 3px solid yellow;
+    width: 50%;
+    margin: auto;
+    & img{
+      display: block;
+      width: 100%;
+    }
+  }
+  &-header{
+    background-color: color(secondary);
+    margin-top: 1.5rem;
+    & h3{
+      text-align: center;
+      text-transform: uppercase;
+      padding: .5rem .25rem;
+      color: white;
+    }
+  }
+  &-body{
+    padding: 1rem;
+    background-color: white;
+    height: 100%;
+  }
+}
+
+.Proveedores{
+  background-color: color(alert);
+}
+
+.Startup{
+  background-color: color(tertiary);
+}
+
+.Conocimiento{
+  background-color: color(primary);
 }
 
 .Socios{
@@ -105,5 +161,109 @@
   grid-template-columns: 1fr;
   &-card-header{
     grid-template-columns: 10% 1fr;
+  }
+}
+
+.Socios-item-slider{ //c-slider
+  border: 2px solid blue;
+  width: 80%;
+  height: 60%;
+  // padding: 5%;
+  overflow: hidden;
+  & .Slider-content{
+    display: flex;
+    width: 400%;
+    height: 100%;
+    border: 3px solid green;
+    // padding: 5% 10%;
+    &-item{
+      width: 100%;
+      & a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        & > img{
+          border: 2px solid red;
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.Contactanos{
+  @include seccion-blanca(rgb(0, 107, 71));
+  grid-template-columns: 1fr;
+  // border: 1px solid blue;
+  width: 100%;
+  &-card-header{
+    grid-template-columns: 10% 1fr;
+  }
+  & .Contact-form{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    // border: 2px solid red;
+    background-color: color(secondary);
+    border-radius: 15px;
+    padding: 2rem;
+    &-item{
+      // border: 2px solid green;
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 10% 1fr;
+      margin-bottom: 1rem;
+      & i{
+        align-self: center;
+        justify-self: end;
+        font-size: 1.5rem;
+        padding-right: .5rem;
+        color: white;
+      }
+      & i.fa-clipboard{
+        align-self: start;
+      }
+      & i.fa-phone{
+        transform: rotate(100deg);
+      }
+      & input, textarea, select{
+        border: none;
+        outline: none;
+        background-color: white;
+        // border-radius: 15px;
+        line-height: 2rem;
+      }
+    }
+    &-item:last-child{
+      grid-template-columns: 1fr;
+      width: 5rem;
+      margin: auto;
+      position: relative;
+      right: -5%;
+    }
+  }
+}
+
+// input.btn-enviar{
+//   background-color: color(primary);
+//   border: none;
+//   cursor: pointer;
+// }
+
+#enviar{
+  background-color: color(primary);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: background-color .3s;
+  &:hover{
+    background-color: darken(color(primary),5);
+  }
+  &:active{
+    transform: scale(.95);
   }
 }

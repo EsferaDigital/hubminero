@@ -34,9 +34,11 @@ main.Main
           h2 Propuesta
           h3 de valor
       .Propuesta-card-body
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolorem at vel laboriosam culpa reprehenderit incidunt molestias nobis commodi, voluptates tempora quia aperiam exercitationem recusandae earum sequi officia explicabo fugiat!
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ab incidunt recusandae, voluptatum nulla ratione exercitationem nisi illum. Architecto, accusantium tempora sunt ipsum consequuntur accusamus aliquid voluptatum beatae iste nulla!
-        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis dolorem officiis quo perferendis, porro beatae assumenda impedit, dolor nesciunt dignissimos expedita nihil aliquid voluptates. Repellat doloremque rerum recusandae itaque! Ex?
+        p Nos haremos cargo de retos comunes.
+        p Trabajaremos en proyectos de innovación en colaboración con terceros.
+        p Administraremos un portafolio de innovaciones de interés de las empresas, generando ahorros, distribuyendo riesgos y ampliando las opciones de retorno.
+        p Compartiremos las prácticas de innovación de las empresas socias.
+        p Facilitaremos los procesos de cambio culturales, la difusión de las acciones innovadoras del sector y la capacitación.
     .Propuesta-item
       .Propuesta-item-img
         img(src="img/propuesta.jpg" alt="Propuesta")
@@ -48,36 +50,36 @@ main.Main
         .Beneficios-card-header-text
           h2 Beneficios
     .Beneficios-item
-      .Beneficios-item-img
-        img(src="img/icon-minero.svg")
-      .Beneficios-item-img
-        img(src="img/icon-camion.png")
-      .Beneficios-item-img
-        img(src="img/icon-up.png")
-      .Beneficios-item-img
-        img(src="img/icon-brain.png")
-    .Beneficios-item
       .Cards
         .Card
+          .Card-img
+            img(src="img/icon-minero.svg")
           .Card-header
             h3 Empresas
           .Card-body
-            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+            p Complementarán sus procesos de innovación por la vía de la colaboración y el acceso a la inteligencia colectiva.
+            p Acelerarán sus procesos de cambio cultural pro innovación.
         .Card
-          .Card-header
+          .Card-img
+            img(src="img/icon-camion.png")
+          .Card-header.Proveedores
             h3 Proveedores
           .Card-body
-            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+            p Se integrarán en la determinación de desafíos comunes y se sumarán a la construcción de soluciones innovadoras.
         .Card
-          .Card-header
+          .Card-img
+            img(src="img/icon-up.png")
+          .Card-header.Startup
             h3 Startup
           .Card-body
-            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+            p Se integrarán como solucionadores a los desafíos del sector aportando con su flexibilidad, capacidades y propuestas innovadoras.
         .Card
-          .Card-header
+          .Card-img
+            img(src="img/icon-brain.png")
+          .Card-header.Conocimiento
             h3 Centros de conocimiento
           .Card-body
-            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eos. Soluta debitis sint, ipsum iure voluptate illum repellat mollitia autem minima. Consequatur assumenda, et in iusto vel minima quaerat laudantium?
+            p Aportarán capacidades de desarrollo y transferirán su conocimiento para atender desafios del sector
   section#plan.Plan
     .Plan-item
       .Plan-card-header
@@ -87,9 +89,12 @@ main.Main
           h2 Plan de
           h3 acción
       .Plan-card-body
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolorem at vel laboriosam culpa reprehenderit incidunt molestias nobis commodi, voluptates tempora quia aperiam exercitationem recusandae earum sequi officia explicabo fugiat!
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ab incidunt recusandae, voluptatum nulla ratione exercitationem nisi illum. Architecto, accusantium tempora sunt ipsum consequuntur accusamus aliquid voluptatum beatae iste nulla!
-        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis dolorem officiis quo perferendis, porro beatae assumenda impedit, dolor nesciunt dignissimos expedita nihil aliquid voluptates. Repellat doloremque rerum recusandae itaque! Ex?
+        h3 1º Llamado de Innovación Abierta 2019
+        p Buscaremos soluciones a nuestros retos para trabajar colaborativamente entre emprendedores, Pymes y Entidades de Conocimiento.
+        p Trabajo con ganadores de 6º Hackathon 2019 de la SNMPE.
+        p Apoyo formal para el fortalecimiento de sus propuestas y la integración de las innovaciones generadas en la hackathon en las empresas socias de Hub.
+        h3 1º Programa Formativo en Innovación Colaborativa
+        p En alianza con Gerens se dictará un programa de capacitación centrado en la innovación colaborativa con foco en el sector minero.
     .Plan-item
       .Plan-item-img
         img(src="img/plan.jpg" alt="Plan de acción")
@@ -100,27 +105,32 @@ main.Main
           img(src="img/logo.png" alt="logo")
         .Socios-card-header-text
           h2 Socios
-    .Socios-item
-      .Slider-flow
-        .Slider-flow-item.slider-flow-actual
-          img(src="img/Antamina.jpg", alt="Antamina")
-        .Slider-flow-item
-          img(src="img/buenaventura.jpg", alt="Buenaventura")
-        .Slider-flow-item
-          img(src="img/gold-fields.jpg", alt="Gold Fields")
-        .Slider-flow-item
-          img(src="img/nexa.jpg", alt="Nexa")
-  section#contactanos
-    .Container-grid-fix-2
-        .Box-img
+    .Socios-item-slider
+      .Slider-content
+        .Slider-content-item
+          a(href="https://www.snmpe.org.pe/" target="_blank")
+            img(src="img/sociedad-nacional.jpg", alt="Sociedad nacional de Mineria")
+        .Slider-content-item
+          a(href="http://www.buenaventura.com/es/" target="_blank")
+            img(src="img/buenaventura.jpg", alt="Buenaventura")
+        .Slider-content-item
+          a(href="https://www.goldfields.com.pe/" target="_blank")
+            img(src="img/gold-fields.jpg", alt="Gold Fields")
+        .Slider-content-item
+          a(href="https://www.nexaresources.com/es" target="_blank")
+            img(src="img/nexa.jpg", alt="Nexa")
+  section#contactanos.Contactanos
+    .Contactanos-item
+      .Contactanos-card-header
+        .Contactanos-card-header-img
           img(src="img/logo.png" alt="logo")
-        .Box-text
+        .Contactanos-card-header-text
           h2 Contáctanos
-    form(method="post" action="" class="ContactForm" name="formulario")
-      .ContactForm-item
+    form(method="post" action="" class="Contact-form" name="formulario" id="formulariogi")
+      .Contact-form-item
         i.fas.fa-user
-        input(type="text" name="name" id="Name" placeholder="Nombre Apellido" required)
-      .ContactForm-item
+        input(type="text" name="name" id="Name" placeholder="Nombre Apellidos" required)
+      .Contact-form-item
         i.fas.fa-users
         select(id="select-1" name="select-1")
           option(value="Empresa Minera" selected="selected") Empresa Minera
@@ -128,18 +138,18 @@ main.Main
           option(value="Startup") Startup
           option(value="Centro de Conocimiento") Centro de Conocimiento
           option(value="Otro") Otro
-      .ContactForm-item
+      .Contact-form-item
         i
         input(type="text" name="company" placeholder="Nombre Organización")
-      .ContactForm-item
+      .Contact-form-item
         i.far.fa-envelope
         input(type="email" name="email" id="Email" placeholder="E-mail" required)
-      .ContactForm-item
+      .Contact-form-item
         i.fas.fa-phone
         input(type="tel" name="phone" placeholder="Teléfono")
-      .ContactForm-item
+      .Contact-form-item
         i.far.fa-clipboard
         textarea(name="message" id="Message" placeholder="Comentario" cols="30" rows="10" required)
-      .ContactForm-item
+      .Contact-form-item
         input(type="hidden" name="action" value="process_form")
         input(type="submit" name="submit" id="enviar" class="btn-enviar" value="Enviar")
