@@ -18,8 +18,6 @@ if(isset($_POST["email"]) && !empty($_POST["email"])){
   $carta .= "Nombre de la empresa: $nameempresa \n";
   $carta .= "Mensaje: $mensaje";
 
-  print_r($carta);
-
   mail($destinoMail, $asunto, $carta);
 
   return print("ok");
