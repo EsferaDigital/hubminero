@@ -1,7 +1,7 @@
 import {toggleNav, scrollNav, animaHeader, colorHeader, showButtonUp, upToTop} from './dev/nav'
 import {CopyDate} from './dev/footer'
 import {SliderFade} from './dev/slider-fade'
-// import {carruselNormal} from './dev/slider'
+import {SendValid} from './dev/sendmail'
 
 
 toggleNav()
@@ -12,6 +12,7 @@ CopyDate()
 showButtonUp()
 upToTop()
 SliderFade()
+SendValid()
 // carruselNormal()
 // printModal(bMForm, createModal,Form)
 // printModalClasic(bMOHistoria, mHistoria, bMCHistoria)

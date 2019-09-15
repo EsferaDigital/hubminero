@@ -128,13 +128,13 @@ main.Main
           img(src="img/logo.png" alt="logo")
         .Contactanos-card-header-text
           h2 Contáctanos
-    form(method="post" action="" class="Contact-form" name="formulario" id="formulariogi")
+    form(method="post" action="" class="Contact-form" name="formulario" id="formHub")
       .Contact-form-item
         i.fas.fa-user
-        input(type="text" name="name" id="Name" placeholder="Nombre Apellidos" required)
+        input(type="text" name="name" id="name" placeholder="Nombre Apellidos" required)
       .Contact-form-item
         i.fas.fa-users
-        select(id="select-1" name="select-1")
+        select(id="select-1" name="empresa")
           option(value="Empresa Minera" selected="selected") Empresa Minera
           option(value="Proveedor Minería") Proveedor Minería
           option(value="Startup") Startup
@@ -151,7 +151,7 @@ main.Main
         input(type="tel" name="phone" placeholder="Teléfono")
       .Contact-form-item
         i.far.fa-clipboard
-        textarea(name="message" id="Message" placeholder="Comentario" cols="30" rows="10" required)
+        textarea(name="message" id="Message" placeholder="Comentario" cols="30" rows="10")
       .Contact-form-item
         input(type="hidden" name="action" value="process_form")
         input(type="submit" name="submit" id="enviar" class="btn-enviar" value="Enviar")
