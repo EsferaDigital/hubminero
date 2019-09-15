@@ -11,3 +11,20 @@
     letter-spacing: 0;
   }
 }
+
+.Box-credito{
+  // background-color: hsl(160, 100%, 10%);
+  display: grid;
+  padding: var(--padding-box-creditos);
+  padding-bottom: 1rem;
+  justify-items: center;
+  align-items: center;
+  font-family: $fuente-secundaria;
+  color: white;
+  font-weight: 400;
+  border-bottom: 1px solid color(secondary);
+  & p{
+    letter-spacing: 0;
+    font-size: 1rem;
+  }
+}

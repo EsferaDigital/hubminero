@@ -130,7 +130,7 @@
     }
   }
   &-header{
-    background-color: color(secondary);
+    background-color: color(primary);
     margin-top: 1.5rem;
     & h3{
       text-align: center;
@@ -148,14 +148,17 @@
 
 .Proveedores{
   background-color: color(alert);
+  padding: 1rem 0;
 }
 
 .Startup{
   background-color: color(tertiary);
+  padding: 1rem 0;
 }
 
-.Conocimiento{
-  background-color: color(primary);
+.Empresas{
+  background-color: color(secondary);
+  padding: 1rem 0;
 }
 
 .Socios{
