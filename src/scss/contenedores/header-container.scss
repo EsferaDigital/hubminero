@@ -16,8 +16,8 @@
 
 .Logo{
   position: absolute;
-  height: $altura-header;
-  line-height: $altura-header;
+  height: var(--altura-header);
+  line-height: var(--altura-header);
   z-index: capa(capa1);
   // border: 1px solid blue;
   @include mq(mdl){
@@ -27,12 +27,12 @@
   & a{
     display: grid;
     width: auto;
-    height: $altura-header;
+    height: var(--altura-header);
     align-content: center;
   }
   & img{
     width: auto;
-    height: $altura-header;
+    height: var(--altura-header);
   }
 }
 
@@ -110,14 +110,14 @@
 .Menu{
   display: flex;
   margin: 0 auto;
-  padding-top: $altura-header;
+  padding-top: var(--altura-header);
   text-align: center;
   height: 100%;
   background: color(secondary);
   @include mq(lgs){
     width: 100%;
     padding-top: 0;
-    height: $altura-header;
+    height: var(--altura-header);
     margin: 0;
     // border: 3px solid red;
     background: transparent;
@@ -127,6 +127,7 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    width: 100%;
     @include mq(lgs){
       flex-direction: row;
       align-items: center;

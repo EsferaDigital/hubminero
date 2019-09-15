@@ -1,18 +1,21 @@
 @mixin seccion-blanca($color-font){
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: var(--columns-seccion-blanca);
   gap: 1rem;
   padding: 2rem 0;
-  &-item:nth-child(2){
-    padding: 1rem;
-    padding-right: 0;
-  }
+  // &-item:nth-child(2){
+  //   padding: 1rem;
+  //   padding-right: 0;
+  // }
   &-item-img{
     width: 100%;
-    height: 500px;
+    height: auto;
     margin: auto;
     // border: 1px solid blue;
     overflow: hidden;
+    @include mq(lgm){
+      padding: 1rem;
+    }
     & img{
       width: 100%;
       height: auto;
@@ -23,7 +26,7 @@
     // border: 2px solid green;
     grid-template-columns: 20% 1fr;
     &-img{
-      padding: 1rem;
+      padding: var(--padding-logo-secciones);
       & img{
         width: 100%;
       }
@@ -45,19 +48,21 @@
       }
       & h2{
         font-weight: 800;
-        //falta fonsize y nada más
+        font-size: var(--font-title-secciones);
       }
       & h3{
         font-weight: 500;
+        font-size: var(--font-title-secciones);
       }
     }
   }
   &-card-body{
     padding: 1.5rem 0;
+    padding-bottom: .5rem;
     & p{
       padding: .5rem 0;
       line-height: 1.5rem;
-      //falta solo fontsize
+      font-size: var(--font-parrafos);
     }
   }
 }
@@ -65,7 +70,7 @@
 .Main{
   // border: 4px solid green;
   position: relative;
-  top: $altura-header;
+  top: var(--altura-header);
   & > section{
     max-width: var(--main-maximo);
     margin: auto;
@@ -96,21 +101,18 @@
     padding: 0;
     width: 100%;
   }
-  // &-item-img{
-  //   border: 3px solid green;
-  //   height: auto;
-  //   width: 50%;
-  //   margin: auto;
-  // }
   &-card-header{
-    grid-template-columns: 10% 1fr;
+    grid-template-columns: 20% 1fr;
+    @include mq(lgm){
+      grid-template-columns: 10% 1fr;
+    }
   }
 }
 
 .Cards{
   // border: 2px solid green;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: var(--columns-cards-beneficios);
   gap: 2rem;
   width: 100%;
 }
@@ -159,39 +161,53 @@
 .Socios{
   @include seccion-blanca(white);
   grid-template-columns: 1fr;
+  padding-bottom: 0;
   &-card-header{
-    grid-template-columns: 10% 1fr;
+    grid-template-columns: 20% 1fr;
+    @include mq(lgm){
+      grid-template-columns: 10% 1fr;
+    }
   }
 }
 
 .Socios-item-slider{ //c-slider
-  border: 2px solid blue;
-  width: 80%;
-  height: 60%;
+  // border: 2px solid blue;
+  width: 100%;
+  height: 80%;
   // padding: 5%;
   overflow: hidden;
-  & .Slider-content{
-    display: flex;
-    width: 400%;
-    height: 100%;
-    border: 3px solid green;
-    // padding: 5% 10%;
-    &-item{
-      width: 100%;
-      & a{
-        display: block;
+  @include mq(md){
+    height: 90%;
+  }
+}
+
+//Comienzo slider
+
+.for_slick_slider{
+  display: flex;
+  height: auto;
+  & .items{
+    // border: 2px solid red;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    @include mq(lgm){
+      margin: 40px;
+    }
+    & a{
+      width: auto;
+      height: 100%;
+      & img{
         width: 100%;
-        height: 100%;
-        & > img{
-          border: 2px solid red;
-          display: block;
-          width: 100%;
-          height: 100%;
-        }
       }
     }
   }
+  & button{
+    display: none !important;
+  }
 }
+
+// fin slider
 
 .Contactanos{
   @include seccion-blanca(rgb(0, 107, 71));
@@ -199,7 +215,10 @@
   // border: 1px solid blue;
   width: 100%;
   &-card-header{
-    grid-template-columns: 10% 1fr;
+    grid-template-columns: 20% 1fr;
+    @include mq(lgm){
+      grid-template-columns: 10% 1fr;
+    }
   }
   & .Contact-form{
     width: 100%;
@@ -237,6 +256,9 @@
         // border-radius: 15px;
         line-height: 2rem;
       }
+      & textarea{
+        max-height: 200px;
+      }
     }
     &-item:last-child{
       grid-template-columns: 1fr;
@@ -247,12 +269,6 @@
     }
   }
 }
-
-// input.btn-enviar{
-//   background-color: color(primary);
-//   border: none;
-//   cursor: pointer;
-// }
 
 #enviar{
   background-color: color(primary);

@@ -2,15 +2,25 @@
 
 $ancho-maximo: 1400px; //de todo el sitio
 $espacio-entre-letras: 1px;
-$altura-header: 10rem; //revisar
+// $altura-header: 5rem; //revisar
 
 :root{
   // ancho maximo de lo visible para desktop
   --main-maximo: 95%;
+  --altura-header: 5rem;
+  @include mq(md){
+    --altura-header: 7rem;
+  }
+  @include mq(lgs){
+    --altura-header: 10rem;
+  }
 }
+
 
 :root{
   //columnas y filas
+  --columns-seccion-blanca: 1fr;
+  --columns-cards-beneficios: 1fr;
   --columns-header-container: 1fr;
   --columns-main-container: 1fr;
   --columns-container-central: 1fr;
@@ -26,8 +36,13 @@ $altura-header: 10rem; //revisar
   --rows-card-copy: 1fr 1fr;
   @include mq(md){
     --columns-card-copy: 1fr 1fr;
+    --columns-cards-beneficios: 1fr 1fr;
     --rows-card-copy: none;
     --columns-container-grid2: 1fr 1fr;
+  }
+  @include mq(lgm){
+    --columns-seccion-blanca: 1fr 1fr;
+    --columns-cards-beneficios: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -40,6 +55,9 @@ $altura-header: 10rem; //revisar
 
 :root{
   // tamaño de fuentes
+  --font-title-secciones: 1.2rem;
+  --font-slider: 1rem;
+  --font-parrafos: 1rem;
   --font-size-titulo: 2rem;
   --font-size-titulo-2: 1.3rem;
   --font-size-titulo-3: 1.1rem;
@@ -58,11 +76,15 @@ $altura-header: 10rem; //revisar
     --size-icon: 2rem;
   }
   @include mq(md){
+    --font-slider: 1.3rem;
+    --font-parrafos: 1.1rem;
     --size-icon: 2.3rem;
     --font-size-titulo-2: 1.5rem;
     --font-size-titulo-3: 1.3rem;
+    --font-size-small-text: .8rem;
   }
   @include mq(mdl){
+    --font-slider: 1.5rem;
     --font-size-titulo: 2.7rem;
     --font-size-titulo-2: 1.7rem;
     --font-size-titulo-3: 1.4rem;
@@ -71,16 +93,24 @@ $altura-header: 10rem; //revisar
     --font-size-parrafos: 1.2rem;
     --font-size-titulo-3: 1.3rem;
     --size-icon: 2.5rem;
+    --font-size-small-text: .9rem;
   }
   @include mq(lgs){
+    --font-slider: 1.7rem;
     --font-size-titulo-3: 1.5rem;
+    --font-title-secciones: 1.8rem;
+  }
+  @include mq(lgm){
+    --font-slider: 2rem;
   }
 }
 
 :root{
   //padding
   --padding-box-creditos: .25rem 0;
+  --padding-logo-secciones: .25rem;
   @include mq(md){
     --padding-box-creditos: .5rem 0;
+    --padding-logo-secciones: 1.3rem;
   }
 }

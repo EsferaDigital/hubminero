@@ -5,7 +5,6 @@ const SliderFade = function sliderInicio(){
   const punto3 = document.getElementById('punto3')
   const punto4 = document.getElementById('punto4')
   const punto5 = document.getElementById('punto5')
-  const punto6 = document.getElementById('punto6')
   const prev = document.getElementById('Prev')
   const next = document.getElementById('Next')
 
@@ -35,7 +34,7 @@ const SliderFade = function sliderInicio(){
 
   function siguiente(){
     actual ++
-    if(actual > 5){
+    if(actual > 4){
       actual = 0
     }
     mostrar(actual)
@@ -44,7 +43,7 @@ const SliderFade = function sliderInicio(){
   function anterior(){
     actual --
     if(actual < 0){
-      actual = 5
+      actual = 4
     }
     mostrar(actual)
   }
@@ -82,9 +81,6 @@ const SliderFade = function sliderInicio(){
   })
   punto5.addEventListener('click', () => {
     mostrar(4)
-  })
-  punto6.addEventListener('click', () => {
-    mostrar(5)
   })
 
   next.addEventListener('click', () => {

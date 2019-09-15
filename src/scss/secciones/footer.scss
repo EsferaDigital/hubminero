@@ -1,7 +1,7 @@
 .Footer{
   // border: 2px solid red;
   position: relative;
-  top: $altura-header;
+  top: var(--altura-header);
   background-color: color(primary);
 }
 

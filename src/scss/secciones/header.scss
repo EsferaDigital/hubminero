@@ -7,8 +7,8 @@
   z-index: capa(capa10);
   width: 100%;
   max-width: $ancho-maximo;
-  height: $altura-header;
-  line-height: $altura-header;
+  height: var(--altura-header);
+  line-height: var(--altura-header);
   // padding-top: .5rem;
   // padding-bottom: .5rem;
   // background-color: pink;
