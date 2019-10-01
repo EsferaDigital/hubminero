@@ -14,7 +14,24 @@ const printModalClasic = (open,modal,close) =>{
   })
 }
 
+const printFormModal = (modal, close) =>{
+  window.addEventListener('load', ()=>{
+    setTimeout(()=>{
+      // let modal = document.getElementById('Modal')
+      modal.classList.toggle('zoom-in')
+      modal.classList.remove('zoom-out')
+      console.log('entro')
+    }, 3000)
+  })
+  close.addEventListener('click', ()=>{
+    modal.classList.replace('zoom-in', 'zoom-out')
+  })
+}
+
+
+
 export {
   printModal,
-  printModalClasic
+  printModalClasic,
+  printFormModal
 }

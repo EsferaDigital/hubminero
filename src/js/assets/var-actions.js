@@ -2,12 +2,12 @@
 
 const bMForm = document.getElementById('FormJoin')
 const bMOHistoria = document.getElementById('Historia')
-const bMCHistoria = document.getElementById('closeModal')
+const closeModal = document.getElementById('closeModal')
 const mHistoria = document.getElementById('ModalH')
 
 export {
   bMForm,
   bMOHistoria,
-  bMCHistoria,
+  closeModal,
   mHistoria
 }

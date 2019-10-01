@@ -1,0 +1,23 @@
+.Container-form-popup{
+  background-color: color(secondary);
+  border: 2px solid red;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: $shadow-flat;
+  & .Popup-header{
+    border: 2px solid green;
+    & p{
+      color: color(primary);
+      padding: .5rem 0;
+    }
+  }
+  & .Popup-form{
+    border: 2px solid blue;
+    display: grid;
+    align-items: center; //vertical
+    justify-items: center; // horizontal
+    &-item{
+      border: 2px solid orange;
+    }
+  }
+}

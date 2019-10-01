@@ -1,0 +1,17 @@
+section#Modal.Modal
+  .Modal-item
+    .Container-form-popup
+      .Popup-header
+        p Entérate primero de los desafíos de innovación que publicaremos dentro del mes de Octubre.
+        p Has innovación junto a las principales empresas mineras del Perú.
+        i#closeModal.fas.fa-times
+      form(method="post" action="" class="Popup-form" name="formulario" id="formPop")
+        .Popup-form-item
+          input(type="text" name="nombre" id="nombre" placeholder="Nombre Apellidos" required)
+        .Popup-form-item
+          input(type="text" name="pais" id="pais" placeholder="Pais" required)
+        .Popup-form-item
+          input(type="email" name="correo" id="correo" placeholder="E-mail" required)
+        .Popup-form-item
+          input(type="hidden" name="action" value="process_form")
+          input(type="submit" name="suscribete" id="suscribete" class="btn-enviar" value="Enviar")
