@@ -21,6 +21,8 @@ $espacio-entre-letras: 1px;
   //columnas y filas
   --columns-seccion-blanca: 1fr;
   --columns-cards-beneficios: 1fr;
+  --columns-beneficios: 1fr;
+  --columns-desafios: 1fr;
   --columns-header-container: 1fr;
   --columns-main-container: 1fr;
   --columns-container-central: 1fr;
@@ -39,6 +41,10 @@ $espacio-entre-letras: 1px;
     --columns-cards-beneficios: 1fr 1fr;
     --rows-card-copy: none;
     --columns-container-grid2: 1fr 1fr;
+    --columns-desafios: 1fr 1fr 1fr;
+  }
+  @include mq(mdl){
+    --columns-beneficios: 1fr 1fr 1fr;
   }
   @include mq(lgm){
     --columns-seccion-blanca: 1fr 1fr;

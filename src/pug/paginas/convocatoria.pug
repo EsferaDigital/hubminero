@@ -1,0 +1,22 @@
+extends ../template/modelo
+append config
+  - titulo = "HUB MINERO DEL PERÚ | CONVOCATORIA";
+  - descripcion = "Convocatoria de innovación abierta mineras del Perú";
+  -
+    link = {
+      inicio: url,
+      propuesta: url + "#propuesta",
+      beneficios: url + "#beneficios",
+      plan: url + "#plan",
+      socios: url + "#socios",
+      contactanos: url + "contactanos"
+    }
+
+block header
+  include ../secciones/header
+block main
+  include ../mains/main-convocatoria
+block footer
+  include ../secciones/footer
+block script
+  script(src="js/convocatoria.js")

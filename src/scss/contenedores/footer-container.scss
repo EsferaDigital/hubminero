@@ -10,13 +10,14 @@
   display: flex;
   padding: 1rem;
   justify-content: center;
-  & i{
+  & a{
     border: 3px solid white;
     border-radius: 50%;
     padding: 10px;
     margin-right: .5rem;
     color: white;
     font-size: 1.2rem;
+    display: block;
     cursor: pointer;
   }
 }

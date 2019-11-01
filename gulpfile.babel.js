@@ -34,13 +34,13 @@ let onError = function (err) {
 
 // 1°Toma cualquier archivo pug, lo pasa a html, lo minifica y crea un archivo html en la raíz si este no existe.
 
-gulp.task('pug2html', function buildHTML() {
+gulp.task('pug', function buildHTML() {
   gulp.src('./src/pug/paginas/*.pug')
     .pipe(pug({
       pretty: true
     }))
     .pipe(gulpPugBeautify({ omit_empty: true }))
-    .pipe(htmlmin({ collapseWhitespace: true })) //Activar para minificar
+    // .pipe(htmlmin({ collapseWhitespace: true })) //Activar para minificar
     .pipe(gulp.dest('./public/'));
 });
 
@@ -83,7 +83,7 @@ gulp.task('js', () => {
     .transform('babelify', {presets: ["@babel/preset-env"]})
     .bundle()
     .on('error', err => console.log(err.message))
-    .pipe(source('./public/js/inicio.js'))
+    .pipe(source('./public/js/convocatoria.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sourcemaps.write('./'))
@@ -109,7 +109,7 @@ gulp.task('server', function () {
     }
   });
 
-  gulp.watch('./src/pug/*/*.pug', ['pug2html']).on("change", server.reload)
+  gulp.watch('./src/pug/*/*.pug', ['pug']).on("change", server.reload)
   gulp.watch('./src/scss/*/*.scss', ['sass', 'cache']).on("change", server.reload)
   gulp.watch('./src/js/*/*.js', ['js', 'cache']).on("change", server.reload)
   gulp.watch('./src/img/*.*', ['img']).on("change", server.reload)
@@ -117,4 +117,4 @@ gulp.task('server', function () {
 
 // 8° Pone en ejecución toda la programación al comando gulp por consola
 
-gulp.task('default', ['pug2html', 'sass', 'server'], function () {});
+gulp.task('default', ['pug', 'sass', 'server'], function () {});

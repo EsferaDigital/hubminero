@@ -1,0 +1,5 @@
+# Enviar trafico HTTP a HTTPS sin www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^hubinnovacionminera\.pe [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://hubinnovacionminera.pe/$1 [R=301,L]

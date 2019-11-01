@@ -11,5 +11,5 @@
 }
 
 .Box-icon{
-  @include box-icon(var(--columns-box-icon), 200px )
+  @include box-icon(var(--columns-box-icon), 200px );
 }
